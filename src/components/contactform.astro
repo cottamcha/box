@@ -103,6 +103,7 @@ import Button from "./ui/button.astro";
     })
       .then(async (response) => {
         let json = await response.json();
+        console.log(json);
         if (response.status == 200) {
           result.classList.add("text-green-500");
           result.innerHTML = json.message;
