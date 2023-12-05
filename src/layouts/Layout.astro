@@ -11,8 +11,8 @@ export interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site
+  "/docs/opengraph.jpg",
+  Astro.site,
 ).toString();
 
 const { title } = Astro.props;
@@ -22,7 +22,7 @@ const makeTitle = title
   : "Box - Web Development Redefined";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
